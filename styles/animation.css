@@ -1,10 +1,18 @@
 .active {
-  will-change: color;
-  transition: color 0.3s;
+  will-change: color !important;
+  transition: color 0.3s !important;
 }
 
 .header__nav-item:hover {
-  color: #FF5900;
+  color: #FF5900 !important;
+}
+
+.header__title:hover {
+  color: #FF5900 !important;
+}
+
+.footer__title:hover {
+  color: #FF5900 !important;
 }
 
 .header__nav-item:visited {
@@ -12,19 +20,21 @@
 }
 
 .header__contacts a:hover {
-  color: #7224EA;
+  color: #7224EA !important;
 }
 
-.btn__text:hover {
-  color:  #FDBF0F;
+.btn:hover {
+  color:  #FDBF0F !important;
+  cursor: pointer !important;
 }
 
-.btn--orange .btn__text:hover {
-  color:  #7224EA;
+.btn--orange:hover {
+  color:  #7224EA !important;
+  cursor: pointer !important;
 }
 
 .footer__nav-item:hover {
-  color: #FF5900;
+  color: #FF5900 !important;
 }
 
 .footer__nav-item:visited {
@@ -32,18 +42,28 @@
 }
 
 .footer__contacts a:hover {
-  color: #7224EA;
+  color: #7224EA !important;
 }
 
 .icon-facebook:hover {
-  color: #3b5998;
+  color: #3b5998 !important;
+}
+
+.btn {
+  transition: 0.3s ease-in-out !important;
 }
 
 .btn:hover {
-  -webkit-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-  transform: scale(1.05);
-  transition-duration: 0.3s;
-  transition-timing-function: ease;
+  -webkit-transform: scale(1.08) !important;
+  -ms-transform: scale(1.08) !important;
+  transform: scale(1.08) !important;
+  /* transition-duration: 0.3s;
+  transition-timing-function: ease; */
 }
 
+select:hover~label,
+input:hover~label,
+label:hover {
+  color:  #7224EA !important;
+  cursor: pointer !important;
+}

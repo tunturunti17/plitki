@@ -58,7 +58,7 @@
 
 .cases__body {
   /* min-height: 22.5rem; */
-  display: flex;
+  /* display: flex; */
   background-color: #fff;
   border: 1px solid rgba(229, 229, 229, 0.6);
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.14), 0px 16px 24px rgba(0, 0, 0, 0.08);
@@ -89,13 +89,13 @@
   /* padding-top: 1rem; */
 }
 
-.roster {
+/* .roster {
   display: flex;
   flex-direction: row;
-  /* column-gap: 18%; */
-  /* margin-top: 4.3125rem;
-  margin-left: 3.4375rem; */
-}
+  column-gap: 18%;
+  margin-top: 4.3125rem;
+  margin-left: 3.4375rem;
+} */
 
 .roster__first .roster__text,
 .roster__second .roster__text {
@@ -111,6 +111,8 @@
 }
 
 
+
+
 .roster__text::before {
   content: url(../img/marker.png);
   position: absolute;
@@ -119,6 +121,12 @@
   width: 32px;
   top: 0.75rem; */
   left: -40%;
+}
+
+@media (max-width:360px) {
+  .roster__text::before {
+    left: -30%;
+  }
 }
 
 /* .roster__second::before {
@@ -131,7 +139,7 @@
   left: -20%;
 } */
 
-.roster p {
+/* .roster p {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
@@ -142,7 +150,7 @@
 
 .roster ul {
   padding-top: 4.1875rem;
-}
+} */
 
 .roster__first {
   display: flex;
@@ -156,11 +164,43 @@
   /* column-gap: 1.0625rem; */
 }
 
+/* @media (max-width:360px) {
+  .roster__first, .roster__second {
+    justify-content: start;
+    width: 12rem;
+  }
+} */
+
 .success {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
+/* @media (max-width:360px) {
+  .success {
+    justify-content: start;
+    width: 12rem;
+  }
+}
+
+@media (max-width:360px) {
+  .roster {
+    display: block;
+    width: 12rem;
+    margin-right: 0.5rem;
+  }
+} */
+
+.tile {
+  margin-bottom: 0rem;
+  padding-left: 0rem;
+
+}
+
+.tile li{
+  list-style-type: none;
+}
 /* .cases::after {
   content: "";
   background-image: url("../img/paket_mish.png");
